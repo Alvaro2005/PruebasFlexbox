@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    flex-flow: column nowrap;
+}
+
+.item {
+    border: medium solid black;
+    width: 20%;
+    height: 20%;
+    background-color: #666;
+}
