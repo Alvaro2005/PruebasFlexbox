@@ -57,6 +57,11 @@ body {
     min-height: 100vh;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 main {
     flex-grow: 1;
 }
@@ -109,6 +114,16 @@ main {
     font-size: 4vw;
 }
 
+.flex-responsive {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-responsive-item {
+    border: medium solid orangered;
+    flex: 1 1 200px;
+}
+
 @media screen and (min-width: 1024px) {
     .header {
         display: flex;
@@ -122,6 +137,24 @@ main {
 
     .menu li {
         padding: 0.4rem;
+    }
+
+    .flex-container {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .flex-item {
+        flex: 0 0 50%;
+    }
+
+    .flex-order-1 {
+        order: 1;
+    }
+
+    .flex-row-reverse {
+        flex-direction: row-reverse;
     }
 }
 
