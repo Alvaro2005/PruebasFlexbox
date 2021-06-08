@@ -88,6 +88,27 @@ main {
     list-style: none;
 }
 
+.hero-image {
+    background-image: url("https://placeimg.com/1280/720/animals");
+    color: white;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-image div {
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image h1 {
+    font-size: 4vw;
+}
+
 @media screen and (min-width: 1024px) {
     .header {
         display: flex;
